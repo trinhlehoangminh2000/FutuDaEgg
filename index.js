@@ -5,7 +5,7 @@ var session = require('express-session');
 var cookieParser = require('cookie-parser');
 var ejs = require('ejs');
 var path = require('path');
-var db = require('./database');
+
 
 
 //create an express app
@@ -28,35 +28,11 @@ app.get('/', function(req, res) {
     });
 });
 
-
-app.get('/about', function(req, res) {
-    db.getEmployeesNumber(databaseData,function(err,result){
-        if(err){
-        }
-        else{
-            var list = [];
-            for (var key in result) {
-                if (result.hasOwnProperty(key)) {           
-                    list.push({name: result[key].name, jobTitle:result[key].jobTitle, pathToImg:result[key].img});
-                }
-            }
-            let data = {
-                title: "About Koala ",
-                employees: list,
-            }
-            ejs.renderFile('./html/about.ejs', data, null, function(err, str){
-                // str => Rendered HTML string
-                res.send(str);
-            });
-        }
-    });
-});
-app.get('/contact', function(req, res) {
-//    res.sendFile(path.join(__dirname+'/html/contact.html'));
+app.get('/2', function(req, res) {  
     let data = {
-        title: "Contact us"
+        title: "Koala"
     }
-    ejs.renderFile('./html/contact.ejs', data, null, function(err, str){
+    ejs.renderFile('./html/index2.ejs', data, null, function(err, str){
         // str => Rendered HTML string
         res.send(str);
     });

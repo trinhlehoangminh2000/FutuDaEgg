@@ -1,0 +1,163 @@
+body {
+    font: 20px Montserrat, sans-serif;
+    line-height: 1.8;
+    color: #f5f6f7;
+  }
+  p {font-size: 16px;}
+  .margin {margin-bottom: 45px;}
+  .bg-1 { 
+    background-color: #1abc9c; /* Green */
+    color: #ffffff;
+  }
+  .bg-2 { 
+    background-color: #474e5d; /* Dark Blue */
+    color: #ffffff;
+  }
+  .bg-light{
+    transition: 1s;
+  }
+  .bg-3 { 
+    background-color: #ffffff; /* White */
+    color: #555555;
+  }
+  .bg-4 { 
+    background-color: #2f2f2f; /* Black Gray */
+    color: #fff;
+  }
+  .container-fluid {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+  .navbar {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 0;
+    font-size: 12px;
+    letter-spacing: 5px;
+  }
+  .navbar-nav {
+    font-size: 20px;
+  }
+  .bg-transparent .navbar-nav  li a,.bg-transparent .navbar-nav a {
+    color: #fff !important;
+    transition: 0.3s;
+  }
+  .bg-transparent .navbar-nav  li a:hover,.bg-transparent .navbar-nav a.active {
+    color: #2f2f2f !important;
+    transition: 0.3s;
+  }
+  .bg-light .navbar-nav  li a:hover,.bg-light .navbar-nav a.active {
+    color: #1abc9c !important;
+    transition: 0.3s;
+  }
+  .bg-4 .card{ 
+    background-color: #3B3B3B;
+    color: #fff;
+  }
+  .bg-4 .card .card-subtitle{
+    color: #1DCFAB;
+  }
+  .bg-4 .card i{
+    position: absolute;
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .circle {
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .img-container {
+    position: relative;
+  }
+  .overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    height: 85%;
+    width: 93%;
+    opacity: 0;
+    transition: .3s ease;
+    background-color:#2f2f2f ;
+  }
+  .img-container:hover .overlay {
+    opacity: 0.7;
+  }
+  a.icon {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  a.icon:hover{
+    text-decoration: none;
+    color: #1abc9c;
+  }
+  input, textarea {
+    color: cornsilk !important;
+    background-color: #2f2f2f !important;
+    margin-bottom: 2rem !important;
+  }
+  .btn-blue {
+    color: #fff;
+    border-color: #1abc9c;
+    border-radius: 1rem;
+  }
+  #resume i {
+    color:#1abc9c;
+  }
+  .hidden{
+    visibility: hidden;
+  }
+  .progress {
+    height: 5px;
+    margin-top: -0.8rem;
+    margin-bottom: 1rem;
+    background-color: #3B3B3B;
+  }
+  .progress-bar{
+    background-color: #1abc9c;
+  }
+  
+
+  .slide {
+    /* The name of the animation */
+    animation-name: slide;
+    -webkit-animation-name: slide;
+    /* The duration of the animation */
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    /* Make the element visible */
+    visibility: visible;
+  }
+  /* Go from 0% to 100% opacity (see-through) and specify the percentage from when to slide in the element along the Y-axis */
+  @keyframes slide {
+    0% {
+      opacity: 0;
+      transform: translateY(70%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+  @-webkit-keyframes slide {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(70%);
+    }
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0%);
+    }
+  }
