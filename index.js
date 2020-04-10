@@ -20,7 +20,7 @@ app.use(express.static('public'));
 
 app.get('/', function(req, res) {  
     let data = {
-        title: "Koala"
+        title: "Tu da web"
     }
     ejs.renderFile('./html/index.ejs', data, null, function(err, str){
         // str => Rendered HTML string
