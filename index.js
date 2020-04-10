@@ -28,15 +28,6 @@ app.get('/', function(req, res) {
     });
 });
 
-app.get('/2', function(req, res) {  
-    let data = {
-        title: "Koala"
-    }
-    ejs.renderFile('./html/index2.ejs', data, null, function(err, str){
-        // str => Rendered HTML string
-        res.send(str);
-    });
-});
 
 //run the server on port 3000
 var port = process.env.PORT || 3000;

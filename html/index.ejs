@@ -2,112 +2,106 @@
     <head>
         <%- include('head'); %>
     </head>
-    
-    <body>
-        <!-- Navigation bar -->
-        <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-gr-transparent">
-            <%- include('navbar'); %>
+    <body data-spy="scroll" data-target=".navbar" data-offset="50">
+
+        <nav class=" fixed-top navbar navbar-expand-lg navbar-light bg-transparent" id = "navbar">
+          <div class="container" >
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse " id="navbarSupportedContent">
+              <ul class="navbar-nav mx-auto" >
+                <li class="nav-item">
+                  <a class="nav-link"  href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#instax">Instax</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#challenge">Challenge</a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </nav>
-        <!-- Slide show --> 
-        <div class="row" style="margin-top: 5.1rem;">
-            <div id="slideshow" class="carousel slide" data-ride="carousel">
-                <!-- Indicators -->
-                <ul class="carousel-indicators">
-                    <li data-target="#slideshow" data-slide-to="0" class="active"></li>
-                    <li data-target="#slideshow" data-slide-to="1"></li>
-                    
-                </ul>
-                <!-- The slideshow -->
-                <div class="carousel-inner">
-                    <div class="carousel-item active col-lg-12">
-                        <img class="img-fluid" src="../img/home-slide/bram-van-oost-c9RxcTVHD_0-unsplash.jpg"  alt="slide1">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h4>First slide</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Condimentum lacinia quis vel eros donec.</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item col-lg-12">
-                        <img class="img-fluid" src="../img/home-slide/lux-interaction-UDETRRE5Mzc-unsplash.jpg"  alt="slide2">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h4>Second slide</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet consectetur adipiscing elit ut aliquam.</p>
-                        </div> 
-                    </div>
-                </div>
-                <!-- Left and right controls -->
-                <a class="carousel-control-prev" href="#slideshow" data-slide="prev">
-                    <span class="carousel-control-prev-icon"></span>
-                </a>
-                <a class="carousel-control-next"  href="#slideshow" data-slide="next">
-                    <span class="carousel-control-next-icon"></span>
-                </a>
+      
+        <!-- First Container -->
+        <div id="home" class=" container-fluid bg-superhero vh-100" >
+          <div class="container" style="margin-top: 3.5rem;">
+            <div class="overlay-background animated slideInLeft delay-1s" id="home-background"></div>
+            <div class="row">
+              <div class="col-8">
+                <h1 class="superhero animated slideInUp text-2" id="hero-1">Tu da Web</h1>
+                <p class="hero hidden">Xin chào! Kéo xuống để biết thêm chi tiết.</p>
+              </div>
+              <div class="col-4">
+                <img class="hero img-fluid mt-3 hidden" src="img/flower/daisyCropped.png"/>
+              </div>
             </div>
+           
+
+          </div>  
         </div>
-        
-        <!-- values -->
-        <section>
+      
+        <!-- Second Container -->
+        <div id= "instax"class="container-fluid bg-2">
+          <div class="mb-3">
             <div class="container">
-                <div class="mt-5">
-                    <div class="row">
-                        <div class="col-lg-6 col-md-12 col-sm-12 py-3 my-3">
-                            <h2 class="text-dr-br slide">What we do</h2>
-                            <hr>
-                            <p class ="text-justify mt-4 font-weight-light" style="font-size: 20px"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Adipiscing bibendum est ultricies integer. Sollicitudin aliquam ultrices sagittis orci a scelerisque purus semper eget. Faucibus interdum posuere lorem ipsum dolor sit. Pharetra et ultrices neque ornare aenean euismod. Nibh venenatis cras sed felis eget velit aliquet. Morbi enim nunc faucibus a pellentesque sit amet porttitor eget. Vel orci porta non pulvinar neque laoreet. Amet risus nullam eget felis eget nunc lobortis mattis. Tellus id interdum velit laoreet id donec.</p>
-                        </div>
-                        <div class="col-lg-6 col-md-12 col-sm-12 my-3 slideanim">
-                            <img class="img-fluid" src="../img/home/jens-kreuter-6jopm1Wj61E-unsplash.jpg" alt="info">
-                        </div>
-                    </div>
-                </div>
+              <h2 class=" margin text-center wow slideInUp">Instax</h2>
             </div>
-        </section>
-        
-        <!-- News -->
-        <section class="mt-5 pt-5 mb-4 pb-4 bg-gr slideanim">
-            <div class="container">
-                <h2 class="text-center text-dr-br">Latest news</h2>
-                <div class="row mt-5">
-                    <div class="col-lg-5 col-md-6 col-sm-6">
-                       <img class="img-fluid" src="../img/home/johannes-plenio-FZpCcPss9to-unsplash.jpg">
+            <div class="row">
+              <div class="col-4"></div>
+              <div class="col-4">
+                <div id="instaxCarouselIndicators" class="carousel slide" data-ride="carousel">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <div class="row">
+                        <div class="col-6"><img class="d-block img-fluid " src="img/instax/1.png" alt="First slide"></div>
+                        <div class="col-6"><img class="d-block img-fluid" src="img/instax/4.png" alt="Second slide"></div>
+                      </div>
                     </div>
-                    <div class="col-lg-3 col-md-6 col-sm-6">
-                        <h4 class="text-lg-br"><i class="far fa-newspaper text-lg-bl"></i> News title</h4> 
-                        <p class="mt-4 text-white text-justify font-weight-light" style="font-size: 20px ">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Donec pretium vulputate sapien nec sagittis. Et netus et malesuada fames ac turpis.</p>
+                    <div class="carousel-item">
+                      <div class="row">
+                        <div class="col-6"><img class="d-block img-fluid " src="img/instax/3.png" alt="Third slide"></div>
+                        <div class="col-6"><img class="d-block img-fluid " src="img/instax/2.png" alt="Third slide"></div>
+                      </div>
                     </div>
-
-                    <div class="col-lg-4 col-md-12 col-sm-12 ">
-                        <p class="font-weight-light text-lg-br" style="font-size: 20px"><i class="far fa-newspaper text-dr-bl"></i> First news</p>
-                        <p class="font-weight-light text-white">Et netus et malesuada fames ac turpis.</p>
-                        <hr class="hr-lg-br">
-                        <p class="font-weight-light text-lg-br" style="font-size: 20px"><i class="far fa-newspaper text-dr-bl"></i> Second news</p>
-                        <p class="font-weight-light text-white">Consectetur adipiscing elit, sed do eiusmod.</p>
-                        <hr class="hr-lg-br">
-                        <p class="font-weight-light text-lg-br" style="font-size: 20px"><i class="far fa-newspaper text-dr-bl"></i> Third news</p>
-                        <p class="font-weight-light text-white">Donec pretium vulputate sapien nec sagittis.</p>     
-                    </div>
-                    
+                  </div>
+                  <a class="carousel-control-prev" href="#instaxCarouselIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                  </a>
+                  <a class="carousel-control-next" href="#instaxCarouselIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                  </a>
                 </div>
+              </div>
             </div>
-        </section>
-        
-        <!-- Footer -->
-        <footer class="mt-3">
-            <%- include('footer'); %>
-        </footer>
-
-        <!-- Bootstrap JavaScript -->
-        <script src="js/bootstrap.js"></script>
-        <script src="js/bootstrap.bundle.min.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-
-        <!-- Local script-->
-        <script src="js/slide.js"></script>
-
-        <!-- Font awesom script-->
-        <script src="https://kit.fontawesome.com/7ce695a48c.js" crossorigin="anonymous"></script>
-    
-    
+          </div>
+        </div>
+      
+        <!-- Third Container -->
+        <div id= "Challenge" class="container-fluid bg-3 text-center">    
+          <h2 class="margin">Challenge</h2>
+          <div class="container">
+            <div class="row">
+              <div class="col-2"></div>
+              <div class="col-8">
+                <div class="embed-responsive embed-responsive-16by9">
+                  <iframe width="900" height="506" src="https://www.youtube.com/embed/V0X-SWiDr1g" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="overlay-challenge bg-4 hidden" style="margin-top: -0.1rem;">
+                  <a class="icon" target="_blank" rel="noopener noreferrer" href="https://koala-llc.herokuapp.com/" >A website to showcase products</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+      <!-- Footer -->
+      <footer class="container-fluid bg-2 text-center">
+        <p>All rights reserved Le Hoang Minh Trinh @ 2020</p> 
+      </footer>
+      
     </body>
-</html>

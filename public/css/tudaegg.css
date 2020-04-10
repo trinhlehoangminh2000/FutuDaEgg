@@ -1,0 +1,195 @@
+body {
+    font-family: 'Muli', sans-serif;
+    font-size: 30px;
+    line-height: 1.8;
+    color: #f5f6f7;
+  }
+  p, span {
+    font-size: 16px;
+    font-family: 'Quicksand', sans-serif;
+  }
+  .bg-superhero p{
+    font-size: 3.5rem;
+  }
+  .superhero{
+    font-size: 9rem;
+  }
+
+  .margin {margin-bottom: 45px;}
+  .bg-3 h1, .bg-3 h2, .bg-3 h3, .bg-3 h4, .bg-3 h5{
+    color: #e7abaa;
+  }
+  .text-2{
+    color: #e1b895;
+  }
+  .bg-superhero{
+    background-color: #d2e1ce;
+    color: #ffffff;
+  }
+  .bg-1 { 
+    background-color: #e7abaa; /* Pink */
+    color: #ffffff;
+  }
+  .bg-2 { 
+    background-color: #e1b895; /* brown */
+    color: #ffffff;
+  }
+  .bg-light{
+    transition: 1s;
+  }
+  .bg-3 { 
+    background-color: #eae9e4; /* White */
+    color: #555555;
+  }
+  .bg-4 { 
+    background-color: #d2e1ce; /* light green */
+    color: #e1b895;
+  }
+  .bg-5{ 
+    background-color: #9cb8a1; /* dark green */
+    color: #fff;
+  }
+  .container-fluid {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+  .navbar {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 0;
+    font-size: 12px;
+    letter-spacing: 5px;
+  }
+  .navbar-nav {
+    font-size: 20px;
+  }
+  .bg-transparent .navbar-nav  li a,.bg-transparent .navbar-nav a {
+    color: #fff !important;
+    transition: 0.3s;
+  }
+
+  .bg-transparent .navbar-nav  li a:hover{
+    color: #2f2f2f !important;
+    transition: 0.3s;
+  }
+  .bg-light .navbar-nav  li a:hover,.bg-light .navbar-nav a.active {
+    color: #e7abaa !important;
+    transition: 0.3s;
+  }
+  
+  .circle {
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .img-container {
+    position: relative;
+  }
+
+  .overlay-background{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    height: 100%;
+    width: 100%;
+    opacity: 1;
+    background-color:#e7abaa ;
+  }
+  .overlay-challenge {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    height: 105%;
+    width: 100%;
+    opacity: 1;
+    transition: .3s ease;
+  }
+  .overlay-challenge {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    height: 105%;
+    width: 100%;
+    opacity: 1;
+    transition: .3s ease;
+  }
+  a.icon {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  a.icon:hover{
+    text-decoration: none;
+    color: #1abc9c;
+  }
+  input, textarea {
+    color: cornsilk !important;
+    background-color: #2f2f2f !important;
+    margin-bottom: 2rem !important;
+  }
+  .btn-blue {
+    color: #fff;
+    border-color: #1abc9c;
+    border-radius: 1rem;
+  }
+  #resume i {
+    color:#1abc9c;
+  }
+  .hidden{
+    visibility: hidden;
+  }
+  
+  .progress {
+    height: 5px;
+    margin-top: -0.8rem;
+    margin-bottom: 1rem;
+    background-color: #3B3B3B;
+  }
+  .progress-bar{
+    background-color: #1abc9c;
+  }
+  
+
+  .slide {
+    /* The name of the animation */
+    animation-name: slide;
+    -webkit-animation-name: slide;
+    /* The duration of the animation */
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    /* Make the element visible */
+    visibility: visible;
+  }
+  /* Go from 0% to 100% opacity (see-through) and specify the percentage from when to slide in the element along the Y-axis */
+  @keyframes slide {
+    0% {
+      opacity: 0;
+      transform: translateY(70%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+  @-webkit-keyframes slide {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(70%);
+    }
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0%);
+    }
+  }
