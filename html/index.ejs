@@ -3,7 +3,6 @@
         <%- include('head'); %>
     </head>
     <body data-spy="scroll" data-target=".navbar" data-offset="50">
-
         <nav class=" fixed-top navbar navbar-expand-lg navbar-light bg-transparent" id = "navbar">
           <div class="container" >
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -26,55 +25,74 @@
         </nav>
       
         <!-- First Container -->
-        <div id="home" class=" container-fluid bg-superhero vh-100" >
+        <div id="home" class=" container-fluid bg-superhero h-100" >
           <div class="container" style="margin-top: 3.5rem;">
-            <div class="overlay-background animated slideInLeft delay-1s" id="home-background"></div>
-            <div class="row">
-              <div class="col-8">
-                <h1 class="superhero animated slideInUp text-2" id="hero-1">Tu da Web</h1>
-                <p class="hero hidden">Xin chào! Kéo xuống để biết thêm chi tiết.</p>
+            <div class="overlay-background animated slideInLeft delay-1s"></div>
+            <div id="hero-content"></div>
+            
+            <script id="hero-desktop" type="text/html">
+              <div class="row">
+                <div class="col-8">
+                  <h1 class="superhero animated slideInUp text-2" id="hero-1">Tu da Web</h1>
+                  <p class="hero hidden">Xin chào! Kéo xuống để biết thêm chi tiết.</p>
+                </div>
+                <div class="col-4">
+                  <img class="hero img-fluid mt-3 hidden" src="img/flower/daisyCropped.png"/>
+                </div>
               </div>
-              <div class="col-4">
-                <img class="hero img-fluid mt-3 hidden" src="img/flower/daisyCropped.png"/>
+            </script>
+
+            <script id="hero-mobile" type="text/html">
+              <div class="row">
+                <div class="col-12">
+                  <h1 class="superhero animated slideInUp text-2" id="hero-1">Tu da Web</h1>
+                </div>
+                <div class="col">
+                  <p class="hero hidden">Xin chào! Kéo xuống để biết thêm chi tiết.</p>
+                </div>
+                <div class="col">
+                  <img class="hero img-fluid mt-3 hidden" src="img/flower/daisyCropped.png"/>
+                </div>
               </div>
-            </div>
-           
+            </script>
 
           </div>  
         </div>
       
         <!-- Second Container -->
         <div id= "instax"class="container-fluid bg-2">
-          <div class="mb-3">
-            <div class="container">
-              <h2 class=" margin text-center wow slideInUp">Instax</h2>
-            </div>
-            <div class="row">
-              <div class="col-4"></div>
-              <div class="col-4">
-                <div id="instaxCarouselIndicators" class="carousel slide" data-ride="carousel">
-                  <div class="carousel-inner">
-                    <div class="carousel-item active">
-                      <div class="row">
-                        <div class="col-6"><img class="d-block img-fluid " src="img/instax/1.png" alt="First slide"></div>
-                        <div class="col-6"><img class="d-block img-fluid" src="img/instax/4.png" alt="Second slide"></div>
+          <div class="container">
+            <div class="mb-3">
+              <div class="container">
+                <h2 class=" margin text-center wow slideInUp">Instax</h2>
+              </div>
+              <div class="row">
+                <div class="col-4"></div>
+                <div class="col-4">
+                  <div id="instaxCarouselIndicators" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <div class="row">
+                          <div class="col-6"><img class="d-block img-fluid " src="img/instax/1.png" alt="First slide"></div>
+                          <div class="col-6"><img class="d-block img-fluid" src="img/instax/4.png" alt="Second slide"></div>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <div class="row">
+                          <div class="col-6"><img class="d-block img-fluid " src="img/instax/3.png" alt="Third slide"></div>
+                          <div class="col-6"><img class="d-block img-fluid " src="img/instax/2.png" alt="Third slide"></div>
+                        </div>
                       </div>
                     </div>
-                    <div class="carousel-item">
-                      <div class="row">
-                        <div class="col-6"><img class="d-block img-fluid " src="img/instax/3.png" alt="Third slide"></div>
-                        <div class="col-6"><img class="d-block img-fluid " src="img/instax/2.png" alt="Third slide"></div>
-                      </div>
-                    </div>
+                    <a class="carousel-control-prev" href="#instaxCarouselIndicators" role="button" data-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#instaxCarouselIndicators" role="button" data-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Next</span>
+                    </a>
                   </div>
-                  <a class="carousel-control-prev" href="#instaxCarouselIndicators" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                  </a>
-                  <a class="carousel-control-next" href="#instaxCarouselIndicators" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                  </a>
                 </div>
               </div>
             </div>
