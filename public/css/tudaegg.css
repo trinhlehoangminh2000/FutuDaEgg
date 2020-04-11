@@ -9,10 +9,10 @@ body {
     font-family: 'Quicksand', sans-serif;
   }
   .bg-superhero p{
-    font-size: 7vh;
+    font-size: 5vw;
   }
   .superhero{
-    font-size: 15vh;
+    font-size: 15vw;
   }
 
   .margin {margin-bottom: 45px;}
