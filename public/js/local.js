@@ -26,13 +26,13 @@ function delayEffect(){
   setTimeout(function(){
     document.getElementById("hero-1").classList.remove("text-2");
     document.getElementById("hero-1").classList.add("text-white");
-  }, 1500); 
+  }, 1300); 
   setTimeout(function(){
     const itemlist = document.querySelectorAll('.hero');
     itemlist.forEach(function(item){
       item.classList.remove("hidden");
       item.classList.add('animated', 'slideInUp');
     });
-  }, 1700);
+  }, 1500);
 }
 
