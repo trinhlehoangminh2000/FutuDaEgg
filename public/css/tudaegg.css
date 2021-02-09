@@ -14,10 +14,10 @@ p, span {
   font-family: 'Quicksand', sans-serif;
 }
 .bg-superhero p{
-  font-size: 0.8em;
+  font-size: 3vmax;
 }
 .superhero{
-  font-size: 2.5em;
+  font-size: 7vmax;
 }
 h2 {
   font-size: 0.8em;
