@@ -161,3 +161,7 @@ h3 {
     -webkit-transform: translateY(0%);
   }
 }
+img-fluid-vertiacl {
+  max-height: 100%;
+  width: auto;
+}
