@@ -34,5 +34,12 @@ function delayEffect(){
       item.classList.add('animated', 'slideInUp');
     });
   }, 1500);
+  setTimeout(function(){
+    const itemlist = document.querySelectorAll('.navbar');
+    itemlist.forEach(function(item){
+      item.classList.remove("hidden");
+      item.classList.add('animated', 'slideInLeft');
+    });
+  }, 1500);
 }
 
