@@ -161,7 +161,11 @@ h3 {
     -webkit-transform: translateY(0%);
   }
 }
-img-fluid-vertiacl {
+.img-fluid-vertical {
   max-height: 100%;
   width: auto;
+}
+.rounded-corner{
+  border-radius: 25px;
+  border: 10px solid #131112;
 }
