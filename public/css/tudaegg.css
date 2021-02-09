@@ -1,6 +1,6 @@
 body {
   font-family: 'Lato', sans-serif;
-  font-size: 1vmax;
+  font-size: 3em;
   line-height: 1.8;
   color: #f5f6f7;
 }
@@ -10,17 +10,20 @@ body {
 
 }
 p, span {
-  font-size: 1.5vmax;
+  font-size: 0.5em;
   font-family: 'Quicksand', sans-serif;
 }
 .bg-superhero p{
-  font-size: 2.5vmax;
+  font-size: 0.8em;
 }
 .superhero{
-  font-size: 7vmax;
+  font-size: 2.5em;
 }
 h2 {
-  font-size: 1.8vmax;
+  font-size: 0.8em;
+}
+h3 {
+  font-size: 0.6em;
 }
 .margin {margin-bottom: 45px;}
 
