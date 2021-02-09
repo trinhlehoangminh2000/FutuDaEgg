@@ -88,11 +88,11 @@ h3 {
 .navbar-nav {
   font-size: 30px;
 }
-.bg-transparent .navbar-nav  li a,.bg-transparent .navbar-nav a {
+.bg-1 .navbar-nav  li a,.bg-1 .navbar-nav a {
   color:  #279AF1  !important;
   transition: 0.3s;
 }
-.bg-transparent .navbar-nav  li a:hover{
+.bg-1 .navbar-nav  li a:hover{
   color: #131112 !important;
   transition: 0.3s;
 }
