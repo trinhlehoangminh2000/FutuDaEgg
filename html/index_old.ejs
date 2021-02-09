@@ -1,0 +1,155 @@
+<html>
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name = "author" content="Trinh Le Hoang Minh">
+      <title><%= title %></title>
+      <!-- Bootstrap and everything-->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+      <!-- Google fonts -->
+      <link href="https://fonts.googleapis.com/css2?family=Muli:wght@300&family=Quicksand:wght@300&display=swap" rel="stylesheet">
+      <!-- jQuery library -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <!-- Popper JS -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+      <!-- Latest compiled JavaScript -->
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+      <!-- local.js -->
+      <script src="js/local.js"></script>
+      <!-- style.css -->
+      <link rel="stylesheet" type="text/css" href="css/tudaegg_old.css">
+      <!-- Font awesome kit-->
+      <script src="https://kit.fontawesome.com/7ce695a48c.js" crossorigin="anonymous"></script>
+      <!-- Wow Js-->
+      <link rel="stylesheet" href="animate.css/animate.css">
+      <script src="wowjs/dist/wow.min.js"></script>
+      <script>
+          new WOW().init();
+      </script>
+    </head>
+    <body data-spy="scroll" data-target=".navbar" data-offset="50">
+        <nav class=" fixed-top navbar navbar-expand-lg navbar-light bg-transparent" id = "navbar">
+          <div class="container" >
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse " id="navbarSupportedContent">
+              <ul class="navbar-nav mx-auto" >
+                <li class="nav-item">
+                  <a class="nav-link"  href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#instax">Instax</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#challenge">Challenge</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      
+        <!-- First Container -->
+        <div id="home" class=" container-fluid bg-superhero h-100" >
+          <div class="container" style="margin-top: 3.5rem;">
+            <div class="overlay-background animated slideInLeft" style="animation-delay: 2s"></div>
+            <div id="hero-content"></div>
+
+            <script id="hero-desktop" type="text/html">
+              <div class="row">
+                <div class="col-8">
+                  <h1 class="superhero animated slideInUp text-2" id="hero-1">Tu da Web</h1>
+                  <p class="hero hidden mt-3">Xin chào! Kéo xuống để biết thêm chi tiết.</p>
+                </div>
+                <div class="col-4">
+                  <img class="hero img-fluid mt-3 hidden" src="img/flower/daisyCropped_old.png"/>
+                </div>
+              </div>
+            </script>
+
+            <script id="hero-mobile" type="text/html">
+              <div class="row">
+                <div class="col-12">
+                  <h1 class="superhero animated slideInUp text-center text-2" id="hero-1">Tu da Web</h1>
+                </div>
+              </div>
+              <div class= "row mt-5">
+                <div class="col-7">
+                  <p class="hero hidden">Xin chào! Kéo xuống để biết thêm chi tiết.</p>
+                </div>
+                <div class="col-5">
+                  <img class="hero img-fluid mt-3 hidden" src="img/flower/daisyCropped.png"/>
+                </div>
+              </div>
+            </script>
+
+          </div>  
+        </div>
+      
+        <!-- Second Container -->
+        <div id= "instax"class="container-fluid bg-2">
+          <div class="container">
+            <div class="mb-3">
+              <div class="container">
+                <h2 class=" margin text-center wow slideInUp">Instax</h2>
+              </div>
+              <div class="row">
+                <div class="col-md-3"></div>
+                <div class="col-md-6 col-sm-12">
+                  <div id="instaxCarouselIndicators" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <div class="row">
+                          <div class="col-6"><img class="d-block img-fluid " src="img/instax/1.png" alt="First slide"></div>
+                          <div class="col-6"><img class="d-block img-fluid" src="img/instax/4.png" alt="Second slide"></div>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <div class="row">
+                          <div class="col-6"><img class="d-block img-fluid " src="img/instax/3.png" alt="Third slide"></div>
+                          <div class="col-6"><img class="d-block img-fluid " src="img/instax/2.png" alt="Third slide"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#instaxCarouselIndicators" role="button" data-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#instaxCarouselIndicators" role="button" data-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Next</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+        <!-- Third Container -->
+        <div id= "Challenge" class="container-fluid bg-3 text-center">    
+          <h2 class="margin">Challenge</h2>
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-1 col-md-2"></div>
+              <div class="col-sm-10 col-md-8">
+                <div class="embed-responsive embed-responsive-16by9">
+                  <iframe width="900" height="506" src="https://www.youtube.com/embed/V0X-SWiDr1g" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="overlay-challenge bg-4 hidden" style="margin-top: -0.1rem;">
+                  <a class="icon" target="_blank" rel="noopener noreferrer" href="https://koala-llc.herokuapp.com/" >A website to showcase products</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+      <!-- Footer -->
+      <footer class="container-fluid bg-2 text-center">
+        <p>All rights reserved Le Hoang Minh Trinh @ 2020</p> 
+      </footer>
+      
+    </body>

@@ -18,6 +18,15 @@ app.use(express.static('public'));
 
 
 
+app.get('/old', function(req, res) {  
+    let data = {
+        title: "Tu da web"
+    }
+    ejs.renderFile('./html/index_old.ejs', data, null, function(err, str){
+        // str => Rendered HTML string
+        res.send(str);
+    });
+});
 app.get('/', function(req, res) {  
     let data = {
         title: "Tu da web"

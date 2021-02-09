@@ -3,125 +3,193 @@
         <%- include('head'); %>
     </head>
     <body data-spy="scroll" data-target=".navbar" data-offset="50">
-        <nav class=" fixed-top navbar navbar-expand-lg navbar-light bg-transparent" id = "navbar">
-          <div class="container" >
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse " id="navbarSupportedContent">
-              <ul class="navbar-nav mx-auto" >
-                <li class="nav-item">
-                  <a class="nav-link"  href="#home">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#instax">Instax</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#challenge">Challenge</a>
-                </li>
-              </ul>
-            </div>
+      <nav class=" fixed-top navbar navbar-expand-lg navbar-light bg-transparent" id = "navbar">
+        <div class="container" >
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse " id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto" >
+              <li class="nav-item">
+                <a class="nav-link mx-5"  href="#home">Home</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link mx-5" href="#instax">Instax</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link mx-5" href="#start">Start</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-5" href="#1st-milestone">1st</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-5" href="#2nd-milestone">2nd</a>
+              </li>
+            </ul>
           </div>
-        </nav>
-      
-        <!-- First Container -->
-        <div id="home" class=" container-fluid bg-superhero h-100" >
-          <div class="container" style="margin-top: 3.5rem;">
-            <div class="overlay-background animated slideInLeft" style="animation-delay: 2s"></div>
-            <div id="hero-content"></div>
-
-            <script id="hero-desktop" type="text/html">
-              <div class="row">
-                <div class="col-8">
-                  <h1 class="superhero animated slideInUp text-2" id="hero-1">Tu da Web</h1>
-                  <p class="hero hidden mt-3">Xin chào! Kéo xuống để biết thêm chi tiết.</p>
-                </div>
-                <div class="col-4">
-                  <img class="hero img-fluid mt-3 hidden" src="img/flower/daisyCropped.png"/>
-                </div>
-              </div>
-            </script>
-
-            <script id="hero-mobile" type="text/html">
-              <div class="row">
-                <div class="col-12">
-                  <h1 class="superhero animated slideInUp text-center text-2" id="hero-1">Tu da Web</h1>
-                </div>
-              </div>
-              <div class= "row mt-5">
-                <div class="col-7">
-                  <p class="hero hidden">Xin chào! Kéo xuống để biết thêm chi tiết.</p>
-                </div>
-                <div class="col-5">
-                  <img class="hero img-fluid mt-3 hidden" src="img/flower/daisyCropped.png"/>
-                </div>
-              </div>
-            </script>
-
-          </div>  
         </div>
-      
-        <!-- Second Container -->
-        <div id= "instax"class="container-fluid bg-2">
-          <div class="container">
-            <div class="mb-3">
-              <div class="container">
-                <h2 class=" margin text-center wow slideInUp">Instax</h2>
+      </nav>
+    
+      <!-- First Container -->
+      <div id="home" class=" container-fluid bg-superhero h-100" >
+        <div class="container" style="margin-top: 3.5rem;">
+          <div class="overlay-background animated slideInLeft" style="animation-delay: 2s"></div>
+          <div id="hero-content"></div>
+
+          <script id="hero-desktop" type="text/html">
+            <div class="row no-marginLR">
+              <div class="col-8">
+                <h1 class="superhero animated slideInUp text-2" id="hero-1">Tu da Web</h1>
+                <p class="hero hidden mt-3 text-4">
+                  Xin chào!
+                  <br>
+                  Tui là Minh, bạn kia là Trúc. Kéo xuống để biết thêm chi tiết về câu 
+                  chuyện tình yêu của tụi tui :).
+                </p>
               </div>
-              <div class="row">
-                <div class="col-md-3"></div>
-                <div class="col-md-6 col-sm-12">
-                  <div id="instaxCarouselIndicators" class="carousel slide" data-ride="carousel">
-                    <div class="carousel-inner">
-                      <div class="carousel-item active">
-                        <div class="row">
-                          <div class="col-6"><img class="d-block img-fluid " src="img/instax/1.png" alt="First slide"></div>
-                          <div class="col-6"><img class="d-block img-fluid" src="img/instax/4.png" alt="Second slide"></div>
-                        </div>
-                      </div>
-                      <div class="carousel-item">
-                        <div class="row">
-                          <div class="col-6"><img class="d-block img-fluid " src="img/instax/3.png" alt="Third slide"></div>
-                          <div class="col-6"><img class="d-block img-fluid " src="img/instax/2.png" alt="Third slide"></div>
-                        </div>
+              <div class="col-4">
+                <img class="hero img-fluid mt-5 hidden" style="border-radius: 25px;border: 10px solid #131112;" src="img/flower/daisyCropped.png"/>
+              </div>
+            </div>
+          </script>
+
+          <script id="hero-mobile" type="text/html">
+            <div class="row">
+              <div class="col-12">
+                <h1 class="superhero animated slideInUp text-center text-2" id="hero-1">Tu da Web</h1>
+              </div>
+            </div>
+            <div class= "row mt-5">
+              <div class="col-7">
+                <p class="hero hidden text-3">Xin chào! Tui là Minh, bạn kia là Trúc. Kéo xuống để biết thêm chi tiết về câu chuyện tình yêu của tụi tui :).</p>
+              </div>
+              <div class="col-5">
+                <img class="hero img-fluid mt-3 hidden" src="img/flower/daisyCropped.png"/>
+              </div>
+            </div>
+          </script>
+
+        </div>  
+      </div>
+    
+      <!-- Second Container -->
+      <div id= "instax" class="container-fluid bg-4">
+        <div class="container">
+          <div class="mb-3">
+            <div class="container">
+              <h2 class=" margin text-center wow slideInUp">Instax luc moi gap lai <3 </h2>
+            </div>
+            <div class="row">
+              <div class="col-md-3"></div>
+              <div class="col-md-6 col-sm-12">
+                <div id="instaxCarouselIndicators" class="carousel slide" data-ride="carousel">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <div class="row">
+                        <div class="col-6"><img class="d-block img-fluid " src="img/instax/1.png" alt="First slide"></div>
+                        <div class="col-6"><img class="d-block img-fluid" src="img/instax/4.png" alt="Second slide"></div>
                       </div>
                     </div>
-                    <a class="carousel-control-prev" href="#instaxCarouselIndicators" role="button" data-slide="prev">
-                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                      <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="carousel-control-next" href="#instaxCarouselIndicators" role="button" data-slide="next">
-                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                      <span class="sr-only">Next</span>
-                    </a>
+                    <div class="carousel-item">
+                      <div class="row">
+                        <div class="col-6"><img class="d-block img-fluid " src="img/instax/3.png" alt="Third slide"></div>
+                        <div class="col-6"><img class="d-block img-fluid " src="img/instax/2.png" alt="Third slide"></div>
+                      </div>
+                    </div>
                   </div>
+                  <a class="carousel-control-prev" href="#instaxCarouselIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                  </a>
+                  <a class="carousel-control-next" href="#instaxCarouselIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                  </a>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      
-        <!-- Third Container -->
-        <div id= "Challenge" class="container-fluid bg-3 text-center">    
-          <h2 class="margin">Challenge</h2>
-          <div class="container">
-            <div class="row">
-              <div class="col-sm-1 col-md-2"></div>
-              <div class="col-sm-10 col-md-8">
-                <div class="embed-responsive embed-responsive-16by9">
-                  <iframe width="900" height="506" src="https://www.youtube.com/embed/V0X-SWiDr1g" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
-                <div class="overlay-challenge bg-4 hidden" style="margin-top: -0.1rem;">
-                  <a class="icon" target="_blank" rel="noopener noreferrer" href="https://koala-llc.herokuapp.com/" >A website to showcase products</a>
-                </div>
+      </div>
+    
+      <!-- Third Container -->
+      <div id= "start" class="container-fluid bg-1 text-center">    
+        <h2 class="margin">First month</h2>
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-1 col-md-2"></div>
+            <div class="col-sm-10 col-md-8">
+              <div class="embed-responsive embed-responsive-16by9">
+                <iframe width="900" height="506" src="https://www.youtube.com/embed/V0X-SWiDr1g" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+              <div class="overlay-challenge bg-4 hidden" style="margin-top: -0.1rem;">
+                <a class="icon" target="_blank" rel="noopener noreferrer" href="https://koala-llc.herokuapp.com/" >A website to showcase products</a>
               </div>
             </div>
           </div>
         </div>
+      </div>
       
+      <!-- Fourth Container -->
+      <div id= "1st-milestone" class="container-fluid bg-4">    
+        <h2 class="margin text-center">A year anniversary!</h2>
+        <div class="container">
+          <h3 class="text-1 text-right">
+            Vienna, 9/2/2021.
+          </h3>
+          <h3 class="text-1">
+            To my dearest darling, treasured, cherished Truc, whom I worship, 
+          </h3>
+          <p class="mt-5">
+            Câu đó trích trong phim the Grand Budapest Hotel, lá thư cuả Zero gửi Agatha. 
+            Tao thấy nó hay quá phải lưu lại đẻ gửi cho mày hehe! Chứ tao mà tự ghi thì đã bảo là
+            "dear em đĩ của HM".
+          </p>
+          <p>
+            Mày thấy tao làm lại cái website đổi màu với chọn font mới đỡ quê hong? Tốn hết cả mấy ngày đó! Tao làm 
+            kể cả lúc tao giận mày vào buổi tối hôm qua luông. Đệt tình yêu bất diệt!
+          </p>
+          <p>
+            Website cũ nè: <a href="http://tudaweb.herokuapp.com/old" class="text-1">http://tudaweb.herokuapp.com/old</a>
+          </p>
+          <p>
+            Nói vậy thôi chứ mình thấy thương bạn lắm. Cả một năm bạn yêu xa mình mà không đòi hỏi 
+            cái gì. À không mày đòi nhiều lắm :). Thời gian qua không có Trúc chắc Minh không vui được 
+            như hôm nay đâu.
+          </p>
+          <p>
+            Từ giờ trở đi có dịp gì tao sẽ để Milestone dô hehe. Mày có thấy trên cái nav bar có cả 
+            2nd milestone không? Ý mình muốn là bạn với mình sẽ có thêm tương lai đó. Tao mong đó là 
+            lúc tụi mình gặp nhau ở Việt Nam. Xuống sân bay tao sẽ ôm chằm chặp lấy mày không cho mày đi 
+            đâu hihi. 
+          </p>
+          <p>
+            Giờ tao link mày một bài hát mà tao không hề thích tí nào ^^. Nhưng ít nhất nó làm tao nhớ
+            đén mày. Vậy là đủ để tao nghe hoài không chán. 
+          </p>
+          <div class="text-center">
+            <iframe width="900" height="506" src="https://www.youtube.com/embed/mybwlwyX28A" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          <p>
+            Mà này, đây là website của hai đứa mình á, mày muốn tao thêm thắt cái gì mày nhớ nói nhaaa. Cuối cùng
+            chúc bồ và tụi mình một ngày anni vui vẻ không bị hắc dịch. Yêu nhau lâu lâu nhé?
+          </p>
+          <h3 class="mt-4 text-1">
+            With respect, adoration, admiration, kisses, gradtitude, best wishes, and love
+          </h3>
+          <h3 class="text-1 text-right">
+            Minh.
+          </h3>
+          <p> 
+            P/S: Này cũng trích luôn á hihi
+          </p>
+        </div>
+      </div>
+
       <!-- Footer -->
-      <footer class="container-fluid bg-2 text-center">
+      <footer class="container-fluid bg-1 text-center">
         <p>All rights reserved Le Hoang Minh Trinh @ 2020</p> 
       </footer>
       
     </body>
+</html>

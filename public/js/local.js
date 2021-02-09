@@ -1,7 +1,7 @@
 window.onscroll = function() {scrollFunction()};
 function scrollFunction() {
   if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-    document.getElementById("navbar").setAttribute("class", "fixed-top navbar navbar-expand-lg navbar-light bg-light");
+    document.getElementById("navbar").setAttribute("class", "fixed-top navbar navbar-expand-lg navbar-light bg-6");
   } else {
     document.getElementById("navbar").setAttribute("class", "fixed-top navbar navbar-expand-lg navbar-light bg-transparent");
   }
@@ -25,7 +25,7 @@ function reformatGrid(){
 function delayEffect(){
   setTimeout(function(){
     document.getElementById("hero-1").classList.remove("text-2");
-    document.getElementById("hero-1").classList.add("text-white");
+    document.getElementById("hero-1").classList.add("text-1");
   }, 1300); 
   setTimeout(function(){
     const itemlist = document.querySelectorAll('.hero');
